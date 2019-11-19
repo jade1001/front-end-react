@@ -1,7 +1,7 @@
 import React from 'react'
 import './App.css'
 import Login from './components/login/Login'
-import Nav from './Nav/Nav';
+import Nav from './Nav/Nav'
 
 function App() {
     return (
@@ -10,5 +10,6 @@ function App() {
             <Login />
         </div>
     )
+}
 
-export default App;
+export default App

@@ -10,6 +10,7 @@ const style = {
         fontFamily: 'Century Gothic',
         border: '1px solid #ddd',
         margin: 0,
+        width: 280,
     },
     icons: {
         border: '1px solid #ddd',
@@ -23,8 +24,8 @@ class Login extends Component {
         return (
             <div className="row h-100 justify-content-center align-items-center">
                 <form className="mx-auto text-center">
-                    <h5>Treasury Debt Issuance</h5>
-                    <p>Login To Your Account</p>
+                    <h4 className="mb-5">Treasury Debt Issuance</h4>
+                    <p className="mb-5">Login To Your Account</p>
                     <div className="input-group form-group">
                         <div className="input-group-prepend">
                             <span
@@ -52,12 +53,16 @@ class Login extends Component {
                             </span>
 
                             <input
-                                type="text"
+                                type="password"
                                 placeholder="Password"
                                 style={style.inputs}
                             ></input>
                         </div>
                     </div>
+                    <label class="float-left">Forgot password?</label>
+                    <button type="submit" class="btn btn-secondary float-right">
+                        Sign In
+                    </button>
                 </form>
             </div>
         )
