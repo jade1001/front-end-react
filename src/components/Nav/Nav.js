@@ -1,51 +1,51 @@
-import React, { Component } from 'react';
-import '../Nav/Nav.css';
-import logo from '../Nav/logo.png';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
+import React, { Component } from 'react'
+import '../Nav/Nav.css'
+import logo from '../Nav/logo.png'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
 // import { Link } from 'react-router-dom';
 // import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 class Nav extends Component {
   render() {
     return (
-      <div className="container-fluid">
-        <nav class="navbar navbar-expand-sm bg-default navbar-default fixed-top">
-          <a class="navbar-brand" href="#">
-            <img src={logo} alt="logo" />
+      <div className='container-fluid'>
+        <nav class='navbar navbar-expand-sm bg-default navbar-default fixed-top'>
+          <a class='navbar-brand' href='#'>
+            <img src={logo} alt='logo' />
           </a>
-          <ul className="navbar-nav">
-            <li className="nav-item">
-              <a href="#home" className="nav-link">
+          <ul className='navbar-nav'>
+            <li className='nav-item'>
+              <a href='#home' className='nav-link'>
                 Dashboard
               </a>
             </li>
-            <li className="nav-item">
-              <a href="#home" className="nav-link">
+            <li className='nav-item'>
+              <a href='#home' className='nav-link'>
                 Debt Issuance
               </a>
             </li>
-            <li className="nav-item">
-              <a href="#home" className="nav-link">
+            <li className='nav-item'>
+              <a href='#home' className='nav-link'>
                 Credit Limits
               </a>
             </li>
-            <li className="nav-item">
-              <a href="#home" className="nav-link">
+            <li className='nav-item'>
+              <a href='#home' className='nav-link'>
                 Identities
               </a>
             </li>
-            <li className="nav-item">
-              <a href="#home" className="nav-link">
+            <li className='nav-item'>
+              <a href='#home' className='nav-link'>
                 Settings
               </a>
             </li>
           </ul>
-          <a href="#home" className="nav-link nav-item nav-right">
-            IPA Ops
+          <a href='#home' className='nav-link nav-item nav-right'>
+            IPA Ops&nbsp;
             <FontAwesomeIcon icon={faChevronDown} />
           </a>
-          <a href="#home" className="nav-link nav-item helpnav">
+          <a href='#home' className='nav-link nav-item helpnav'>
             Help
           </a>
         </nav>
@@ -61,8 +61,8 @@ class Nav extends Component {
           </div>
         </Router> */}
       </div>
-    );
+    )
   }
 }
 
-export default Nav;
+export default Nav
