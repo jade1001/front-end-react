@@ -1,45 +1,39 @@
-.commercial{
-    border-bottom: 1px solid #eaeaea;
-    padding: 5px;
-    margin: auto;
+.commercial {
+  border-bottom: 1px solid #eaeaea;
+  padding: 5px;
+  margin: auto;
 }
-.commercial span{
-    border-bottom: 3px solid #09206d;
-    padding: 7px 10px;
+.commercial span {
+  border-bottom: 3px solid #09206d;
+  padding: 7px 10px;
 }
 
-.sided{
-    
-    display: grid;
-
-
+.sided {
+  display: grid;
 }
 .sidenav {
-    height: auto;
-    padding-top: 20px;
-    border-right: 1px solid rgb(202, 201, 201);
+  height: auto;
+  padding-top: 20px;
+  border-right: 1px solid rgb(202, 201, 201);
 }
 
 .sidenav a {
-padding: 6px 8px 6px 16px;
-text-decoration: none;
-color: #a1aca9;
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  color: #a1aca9;
 }
-
 
 .sidenav a:hover {
-color: #3f33b1;
-
+  color: #3f33b1;
 }
 
-.start{
-    padding: 0px !important;
-
+.start {
+  padding: 0px !important;
 }
 
-@media(min-width: 320px){
+/* @media(min-width: 320px){
     .navIndent{
         width: 320px;
     }
    
-}
+} */

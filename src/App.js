@@ -5,6 +5,7 @@ import Nav from './components/nav/Nav'
 import Dashboard from './components/dashboard/Dashboard'
 import Home from './components/index/Home.js'
 import OpsNotif from './components/dashboard/OpsNotif'
+import DebtIssuance from './components/DebtIssuanceTab/DebtIssuance'
 
 function App() {
   return (
@@ -12,7 +13,9 @@ function App() {
       {/* <Dashboard /> */}
       {/* <Nav /> */}
       {/* <Login /> */}
-      <Home />
+      {/* <Home /> */}
+      <DebtIssuance />
+      {/* <Tables /> */}
       {/* <OpsNotif /> */}
     </div>
   )
