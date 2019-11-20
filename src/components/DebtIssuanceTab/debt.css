@@ -1,11 +1,11 @@
 .commercial {
   border-bottom: 1px solid #eaeaea;
   padding: 5px;
-  margin: auto;
 }
 .commercial span {
   border-bottom: 3px solid #09206d;
-  padding: 7px 10px;
+  padding: 7px 0px;
+  margin-left: -14px;
 }
 
 .sided {
