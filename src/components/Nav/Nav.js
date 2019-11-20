@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import '../Nav/Nav.css'
+import './Nav.css'
 import logo from '../Nav/logo.png'
 // import { Link } from 'react-router-dom';
 // import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';

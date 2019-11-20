@@ -1,28 +1,14 @@
 import React, { Component } from 'react'
-import { StyleSheet, css } from 'aphrodite'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faIdCardAlt } from '@fortawesome/free-solid-svg-icons'
-import { faKey } from '@fortawesome/free-solid-svg-icons'
-
-const style = {
-    inputs: {
-        padding: '5px 15px',
-        fontFamily: 'Century Gothic',
-        border: '1px solid #ddd',
-        margin: 0,
-        width: 280,
-    },
-    icons: {
-        border: '1px solid #ddd',
-        borderRadius: 0,
-        backgroundColor: '#eee',
-    },
-}
+// import { FontAwesomeIcon } from './node_modules/@fortawesome/react-fontawesome'
+import { FontAwesomeIcon } from '../../../node_modules/@fortawesome/react-fontawesome'
+import { faIdCardAlt } from '../../../node_modules/@fortawesome/free-solid-svg-icons'
+import { faKey } from '../../../node_modules/@fortawesome/free-solid-svg-icons'
+import style from './LoginStyles'
 
 class Login extends Component {
     render() {
         return (
-            <div className="row h-100 justify-content-center align-items-center">
+            <div className="mx-auto row h-100 justify-content-center align-items-center">
                 <form className="mx-auto text-center">
                     <h4 className="mb-5">Treasury Debt Issuance</h4>
                     <p className="mb-5">Login To Your Account</p>

@@ -1,13 +1,15 @@
 import React from 'react'
 import './App.css'
-import Login from './components/login/Login'
-import Nav from './Nav/Nav'
+import Login from './components/Login/Login'
+import Nav from './components/Nav/Nav'
+import SampDashboard from './components/Dashboard/SampDashboard'
 
 function App() {
     return (
         <div className="App h-100">
-            <Nav />
-            <Login />
+            {/* <Nav /> */}
+            {/* <Login /> */}
+            <SampDashboard />
         </div>
     )
 }
