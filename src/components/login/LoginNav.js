@@ -1,25 +1,25 @@
-import React, { Component } from 'react';
-import logo from '/Users/ariane.mejia/Desktop/REACT TASK/front-end-react/src/Nav/logo.png';
-import '../login/loginNav.css';
+import React, { Component } from 'react'
+import logo from '../Nav/logo.png'
+import '../login/loginNav.css'
 // import { Link } from 'react-router-dom';
 // import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 class LoginNav extends Component {
   render() {
     return (
-      <div className="container-fluid">
-        <nav class="navbar navbar-expand-sm bg-default navbar-default fixed-top">
-          <a class="navbar-brand" href="#">
-            <img src={logo} alt="logo" />
+      <div className='container-fluid'>
+        <nav className='navbar navbar-expand-sm bg-default navbar-default fixed-top'>
+          <a className='navbar-brand' href='#'>
+            <img src={logo} alt='logo' />
           </a>
-          <ul className="navbar-nav ml-auto" style={{ marginRight: '3%' }}>
-            <li className="nav-item">
-              <a href="#home" className="nav-link">
+          <ul className='navbar-nav ml-auto' style={{ marginRight: '3%' }}>
+            <li className='nav-item'>
+              <a href='#home' className='nav-link'>
                 Sign In
               </a>
             </li>
-            <li className="nav-item">
-              <a href="#home" className="nav-link">
+            <li className='nav-item'>
+              <a href='#home' className='nav-link'>
                 Help
               </a>
             </li>
@@ -37,8 +37,8 @@ class LoginNav extends Component {
           </div>
         </Router> */}
       </div>
-    );
+    )
   }
 }
 
-export default LoginNav;
+export default LoginNav

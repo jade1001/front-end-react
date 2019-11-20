@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
-import { StyleSheet, css } from 'aphrodite';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faIdCardAlt } from '@fortawesome/free-solid-svg-icons';
-import { faKey } from '@fortawesome/free-solid-svg-icons';
-import LoginNav from './LoginNav';
+import React, { Component } from 'react'
+import { StyleSheet, css } from 'aphrodite'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faIdCardAlt } from '@fortawesome/free-solid-svg-icons'
+import { faKey } from '@fortawesome/free-solid-svg-icons'
+import LoginNav from './LoginNav'
 
 const style = {
   inputs: {
@@ -21,64 +21,64 @@ const style = {
   btn: {
     backgroundColor: '#192F59'
   }
-};
+}
 
 class Login extends Component {
   render() {
     return (
       <div
-        className="row h-100 justify-content-center align-items-center"
-        style={{ marginTop: '-8%' }}
+        className='row h-100 justify-content-center align-items-center'
+        style={{ marginTop: '10%' }}
       >
         <LoginNav />
-        <form className="mx-auto text-center">
-          <h4 className="mb-5" style={{ color: '#182E58' }}>
+        <form className='mx-auto text-center'>
+          <h4 className='mb-5' style={{ color: '#182E58' }}>
             Treasury Debt Issuance
           </h4>
-          <p className="mb-5" style={{ color: '#182E58' }}>
+          <p className='mb-5' style={{ color: '#182E58' }}>
             Login To Your Account
           </p>
-          <div className="input-group form-group">
-            <div className="input-group-prepend">
-              <span className="input-group-text" style={style.icons}>
+          <div className='input-group form-group'>
+            <div className='input-group-prepend'>
+              <span className='input-group-text' style={style.icons}>
                 <FontAwesomeIcon icon={faIdCardAlt} />
               </span>
 
               <input
-                type="text"
-                placeholder="User ID / Email"
+                type='text'
+                placeholder='User ID / Email'
                 style={style.inputs}
               ></input>
             </div>
           </div>
 
-          <div className="input-group form-group">
-            <div className="input-group-prepend">
-              <span className="input-group-text" style={style.icons}>
+          <div className='input-group form-group'>
+            <div className='input-group-prepend'>
+              <span className='input-group-text' style={style.icons}>
                 <FontAwesomeIcon icon={faKey} />
               </span>
 
               <input
-                type="password"
-                placeholder="Password"
+                type='password'
+                placeholder='Password'
                 style={style.inputs}
               ></input>
             </div>
           </div>
-          <label class="float-left" style={{ color: '#182E58' }}>
-            Forgot password?
+          <label className='float-left' style={{ color: '#182E58' }}>
+            <a href='#'>Forgot password?</a>
           </label>
           <button
-            type="submit"
-            class="btn btn-secondary float-right"
+            type='submit'
+            className='btn btn-secondary float-right'
             style={style.btn}
           >
             Sign In
           </button>
         </form>
       </div>
-    );
+    )
   }
 }
 
-export default Login;
+export default Login
