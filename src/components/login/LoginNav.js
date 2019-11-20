@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import logo from '../Nav/logo.png';
+import logo from '../nav/logo.png';
 import '../login/loginNav.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
@@ -9,31 +9,31 @@ import { faBars } from '@fortawesome/free-solid-svg-icons';
 class LoginNav extends Component {
   render() {
     return (
-      <div className="container-fluid">
-        <nav className="navbar navbar-expand-sm bg-default navbar-default fixed-top">
-          <a className="navbar-brand" href="#">
-            <img src={logo} alt="logo" />
+      <div className='container-fluid'>
+        <nav className='navbar navbar-expand-sm bg-default navbar-default fixed-top'>
+          <a className='navbar-brand' href='#'>
+            <img src={logo} alt='logo' />
           </a>
           <button
-            className="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarToggler"
-            aria-controls="navbarToggler"
+            className='navbar-toggler'
+            type='button'
+            data-toggle='collapse'
+            data-target='#navbarToggler'
+            aria-controls='navbarToggler'
           >
-            <span class="navbar-toggler-icon">
+            <span class='navbar-toggler-icon'>
               <FontAwesomeIcon icon={faBars} />
             </span>
           </button>
-          <div className="collapse navbar-collapse" id="navbarToggler">
-            <ul className="navbar-nav ml-auto" style={{ marginRight: '3%' }}>
-              <li className="nav-item">
-                <a href="#home" className="nav-link">
+          <div className='collapse navbar-collapse' id='navbarToggler'>
+            <ul className='navbar-nav ml-auto' style={{ marginRight: '3%' }}>
+              <li className='nav-item'>
+                <a href='#home' className='nav-link'>
                   Sign In
                 </a>
               </li>
-              <li className="nav-item">
-                <a href="#home" className="nav-link">
+              <li className='nav-item'>
+                <a href='#home' className='nav-link'>
                   Help
                 </a>
               </li>
