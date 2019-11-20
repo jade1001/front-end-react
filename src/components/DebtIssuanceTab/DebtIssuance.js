@@ -25,28 +25,28 @@ class DebtIssuance extends Component {
       )
     })
     return (
-      <div className='container'>
-        <div className='commercial'>
+      <div className='container-fluid'>
+        <div className='commercial ml-4'>
           <span>Commercial Paper</span>
         </div>
         <div className='row'>
-          <div className='col-m-4 m-3 sidenav'>
-            <div className='sided w-100 ml-3 mr-2'>
-              <a href='#' className='maturities'>
+          <div className='col-2 sidenav'>
+            <div className='sided ml-3'>
+              <a href='blank' className='maturities'>
                 <span>Maturities ISIN</span>
                 <i className='icon fa fa-fw fa-chevron-right'></i>
               </a>
-              <a href='#' className='tranch'>
+              <a href='blank' className='tranch'>
                 <span>Tranches</span>
                 <i className='icon fa fa-fw fa-chevron-right'></i>
               </a>
-              <a href='#' className='allo'>
+              <a href='blank' className='allo'>
                 <span>Allocations</span>
                 <i className='icon fa fa-fw fa-chevron-right'></i>
               </a>
               <ul>
                 <li>
-                  <a href='#' className='start'>
+                  <a href='blank' className='start'>
                     Start New
                   </a>
                 </li>
@@ -54,53 +54,31 @@ class DebtIssuance extends Component {
             </div>
           </div>
 
-          <div className='col-m-8 m-3 '>
+          <div className='col-10 '>
             <div className='pt-4 navIndent'>
-              <nav className='navbar navbar-expand-lg navbar-light bg-light'>
-                <a className='navbar-brand' href='#'>
+              <nav className='navbar navbar-light bg-light'>
+                <a className='navbar-brand' href='blank'>
                   <i className='fa fa-download'></i>
                 </a>
-                <button
-                  className='navbar-toggler'
-                  type='button'
-                  data-toggle='collapse'
-                  data-target='#navbarSupportedContent'
-                  aria-controls='navbarSupportedContent'
-                  aria-expanded='false'
-                  aria-label='Toggle navigation'
-                >
-                  <span className='navbar-toggler-icon'></span>
-                </button>
 
-                <div
-                  className='collapse navbar-collapse'
-                  id='navbarSupportedContent'
-                >
                   <form className='form-inline my-2 my-lg-0'>
                     <input
                       className='form-control mr-sm-2'
                       type='search'
-                      placeholder='Search'
                       aria-label='Search'
                       value={this.state.search}
                       onChange={this.updateSearch.bind(this)}
                     />
                     <button
-                      className='btn btn-outline-success my-2 my-sm-0'
+                      className='btn btn-dark my-2 my-sm-0'
                       type='submit'
                       onChange={this.updateSearch.bind(this)}
                     >
-                      <i class='fa fa-fw fa-search'></i>
+                      <i className='fa fa-fw fa-search'></i>
                     </button>
                   </form>
-                </div>
               </nav>
-            </div>
-          </div>
-        </div>
-
-        <div>
-          <table className='table table-hover'>
+              <table className='table table-hover'>
             <thead>
               <tr>
                 <th scope='col'>Name</th>
@@ -140,6 +118,8 @@ class DebtIssuance extends Component {
               ))}
             </tbody>
           </table>
+            </div>
+          </div>
         </div>
       </div>
     )
