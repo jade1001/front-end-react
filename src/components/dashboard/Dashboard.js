@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import './CardDesign.css'
 import report from '../dashboard/reports.png'
 import OpsNotif1 from './OpsNotif1'
-import Nav from '../nav/Nav'
 import {
     BrowserRouter as Router,
     Switch,
