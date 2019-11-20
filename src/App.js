@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
-import OpsNotif from './components/Dashboard/OpsNotif';
+import OpsNotif1 from './components/Dashboard/OpsNotif1';
+// import OpsNotif from './components/Dashboard/OpsNotif';
 // import LoginNav from './components/login/LoginNav';
 // import Nav from './components/Nav/Nav';
 // import Login from './components/login/Login';
@@ -13,8 +14,8 @@ function App() {
       {/* <Nav /> */}
       {/* <Dashboard /> */}
       {/* <Login /> */}
-
-      <OpsNotif />
+      {/* <OpsNotif /> */}
+      <OpsNotif1 />
     </div>
   );
 }

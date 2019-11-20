@@ -28,7 +28,7 @@ class Nav extends Component {
           </button>
           <div className="collapse navbar-collapse" id="navbarToggler">
             <ul className="navbar-nav">
-              <li className="nav-item">
+              <li className="nav-item active">
                 <a href="#home" className="nav-link">
                   Dashboard
                 </a>
