@@ -3,6 +3,7 @@ import '../Nav/Nav.css';
 import logo from '../Nav/logo.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 // import { Link } from 'react-router-dom';
 // import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
@@ -14,40 +15,55 @@ class Nav extends Component {
           <a class="navbar-brand" href="#">
             <img src={logo} alt="logo" />
           </a>
-          <ul className="navbar-nav">
-            <li className="nav-item">
-              <a href="#home" className="nav-link">
-                Dashboard
+          <button
+            className="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarToggler"
+            aria-controls="navbarToggler"
+          >
+            <span class="navbar-toggler-icon">
+              <FontAwesomeIcon icon={faBars} />
+            </span>
+          </button>
+          <div className="collapse navbar-collapse" id="navbarToggler">
+            <ul className="navbar-nav">
+              <li className="nav-item">
+                <a href="#home" className="nav-link">
+                  Dashboard
+                </a>
+              </li>
+              <li className="nav-item">
+                <a href="#home" className="nav-link">
+                  Debt Issuance
+                </a>
+              </li>
+              <li className="nav-item">
+                <a href="#home" className="nav-link">
+                  Credit Limits
+                </a>
+              </li>
+              <li className="nav-item">
+                <a href="#home" className="nav-link">
+                  Identities
+                </a>
+              </li>
+              <li className="nav-item">
+                <a href="#home" className="nav-link">
+                  Settings
+                </a>
+              </li>
+            </ul>
+            <div className="nav-right">
+              <a href="#home" className="nav-link nav-item helpnav">
+                IPA Ops
+                <FontAwesomeIcon icon={faChevronDown} />
               </a>
-            </li>
-            <li className="nav-item">
-              <a href="#home" className="nav-link">
-                Debt Issuance
+              <a href="#home" className="nav-link nav-item helpnav">
+                Help
               </a>
-            </li>
-            <li className="nav-item">
-              <a href="#home" className="nav-link">
-                Credit Limits
-              </a>
-            </li>
-            <li className="nav-item">
-              <a href="#home" className="nav-link">
-                Identities
-              </a>
-            </li>
-            <li className="nav-item">
-              <a href="#home" className="nav-link">
-                Settings
-              </a>
-            </li>
-          </ul>
-          <a href="#home" className="nav-link nav-item nav-right">
-            IPA Ops
-            <FontAwesomeIcon icon={faChevronDown} />
-          </a>
-          <a href="#home" className="nav-link nav-item helpnav">
-            Help
-          </a>
+            </div>
+          </div>
         </nav>
         {/* <Router>
           <div className="App">

@@ -16,14 +16,10 @@ li a:hover {
   border-bottom: 3px solid #192f59;
 }
 .nav-right {
+  display: flex;
   margin-left: 40%;
   color: #a2a2a2;
   border: 3px solid rgb(245, 245, 245);
-}
-.nav-right:hover {
-  color: #192f59;
-  text-decoration-line: none;
-  border-bottom: 3px solid #192f59;
 }
 .helpnav {
   color: #a2a2a2;
