@@ -1,0 +1,90 @@
+.title-header {
+    background-color: rgb(245,245,245);
+    padding: 5px;
+    color: rgb(24, 46, 88);
+    font-weight: 500;
+}
+.title-link {
+    font-weight: normal;
+    color: rgb(24, 46, 88);
+}
+.title-link i {
+    font-size: 13px;
+}
+.modal-body {
+    width: 90%;
+    margin: auto;
+}
+.qspan {
+    font-size: 12px;
+    color: rgb(24, 46, 88);
+}
+    
+.modal-footer{
+    width: 80%;
+    border-top: none;
+    margin: auto;
+    padding: 0 16px;
+}
+.modal-data-body {
+    width: 90%;
+    border-top: none;
+    margin: auto;
+}
+
+.nav-link {
+    font-size: 11px;
+    border-bottom: 2px solid white;
+}
+.nav {
+    margin: auto;
+    color: rgb(24, 46, 88);
+}
+ul {
+    width: 90%;
+}
+
+/** Data component **/
+#frow{
+    height: 25px;
+}
+#srow {
+    height: 50px;
+    margin-top: 20px;
+}
+.container {
+    width: 90%;
+    margin: auto;
+}
+.fcolumn {
+    text-align: left;
+    font-size: 11px;
+}
+.scolumn {
+    text-align: center;
+    font-size: 11px;
+}
+.tcolumn {
+    text-align: right;
+    font-size: 11px;
+}
+
+
+/** Comment component **/
+.comment-container {
+    text-align: left;
+    height: 150px;
+    width: 100%;
+}
+.comment{
+    width: 100%;
+    font-size: 11px;
+    height: 100px;
+    text-align: left;
+}
+.btn {
+    padding: 1px;
+    font-size: 8px;
+    width: 40px;
+    background-color: rgb(24, 46, 88);
+}
