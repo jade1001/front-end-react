@@ -1,18 +1,17 @@
 import React, { Component } from 'react';
-import '../Nav/Nav.css';
 import logo from '../Nav/logo.png';
+import '../login/loginNav.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 // import { Link } from 'react-router-dom';
 // import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
-class Nav extends Component {
+class LoginNav extends Component {
   render() {
     return (
       <div className="container-fluid">
-        <nav class="navbar navbar-expand-sm bg-default navbar-default fixed-top">
-          <a class="navbar-brand" href="#">
+        <nav className="navbar navbar-expand-sm bg-default navbar-default fixed-top">
+          <a className="navbar-brand" href="#">
             <img src={logo} alt="logo" />
           </a>
           <button
@@ -27,42 +26,18 @@ class Nav extends Component {
             </span>
           </button>
           <div className="collapse navbar-collapse" id="navbarToggler">
-            <ul className="navbar-nav">
+            <ul className="navbar-nav ml-auto" style={{ marginRight: '3%' }}>
               <li className="nav-item">
                 <a href="#home" className="nav-link">
-                  Dashboard
+                  Sign In
                 </a>
               </li>
               <li className="nav-item">
                 <a href="#home" className="nav-link">
-                  Debt Issuance
-                </a>
-              </li>
-              <li className="nav-item">
-                <a href="#home" className="nav-link">
-                  Credit Limits
-                </a>
-              </li>
-              <li className="nav-item">
-                <a href="#home" className="nav-link">
-                  Identities
-                </a>
-              </li>
-              <li className="nav-item">
-                <a href="#home" className="nav-link">
-                  Settings
+                  Help
                 </a>
               </li>
             </ul>
-            <div className="nav-right">
-              <a href="#home" className="nav-link nav-item helpnav">
-                IPA Ops
-                <FontAwesomeIcon icon={faChevronDown} />
-              </a>
-              <a href="#home" className="nav-link nav-item helpnav">
-                Help
-              </a>
-            </div>
           </div>
         </nav>
         {/* <Router>
@@ -81,4 +56,4 @@ class Nav extends Component {
   }
 }
 
-export default Nav;
+export default LoginNav;
