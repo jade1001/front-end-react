@@ -97,5 +97,30 @@ class Dashboard extends Component {
         )
     }
 }
+const CreditLimits = () => (
+    <div>
+        <h1>Credit Limits</h1>
+    </div>
+)
+const Identities = () => (
+    <div>
+        <h1>Identities</h1>
+    </div>
+)
+const Settings = () => (
+    <div>
+        <h1>Settings</h1>
+    </div>
+)
+const OPS = () => (
+    <div>
+        <h1>OPS</h1>
+    </div>
+)
+const Help = () => (
+    <div>
+        <h1>Help</h1>
+    </div>
+)
 
 export default Dashboard
