@@ -1,8 +1,8 @@
-import React, { Component } from 'react'
-import './CardDesign.css'
-import report from '../dashboard/reports.png'
-import OpsNotif1 from './OpsNotif1'
-import Nav from '../nav/Nav'
+import React, { Component } from 'react';
+import './CardDesign.css';
+import report from '../dashboard/reports.png';
+import OpsNotif1 from './OpsNotif1';
+import Nav from '../nav/Nav';
 
 class Dashboard extends Component {
   render() {
@@ -83,8 +83,8 @@ class Dashboard extends Component {
         </div>
         <OpsNotif1 />
       </div>
-    )
+    );
   }
 }
 
-export default Dashboard
+export default Dashboard;

@@ -1,8 +1,8 @@
-import React, { Component } from 'react'
-import logo from '../nav/logo.png'
-import '../login/loginNav.css'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBars } from '@fortawesome/free-solid-svg-icons'
+import React, { Component } from 'react';
+import logo from '../nav/logo.png';
+import '../login/loginNav.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 // import { Link } from 'react-router-dom';
 // import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
@@ -52,8 +52,8 @@ class LoginNav extends Component {
           </div>
         </Router> */}
       </div>
-    )
+    );
   }
 }
 
-export default LoginNav
+export default LoginNav;
