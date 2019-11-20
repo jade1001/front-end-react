@@ -1,84 +1,101 @@
 import React, { Component } from 'react'
-import { StyleSheet, css } from 'aphrodite'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faIdCardAlt } from '@fortawesome/free-solid-svg-icons'
-import { faKey } from '@fortawesome/free-solid-svg-icons'
-import LoginNav from './LoginNav'
+import { FontAwesomeIcon } from '../../../node_modules/@fortawesome/react-fontawesome'
+import { faIdCardAlt } from '../../../node_modules/@fortawesome/free-solid-svg-icons'
+import { faKey } from '../../../node_modules/@fortawesome/free-solid-svg-icons'
+import style from './LoginStyles'
 
-const style = {
-  inputs: {
-    padding: '5px 15px',
-    fontFamily: 'Century Gothic',
-    border: '1px solid #ddd',
-    margin: 0,
-    width: 280
-  },
-  icons: {
-    border: '1px solid #ddd',
-    borderRadius: 0,
-    backgroundColor: '#eee'
-  },
-  btn: {
-    backgroundColor: '#192F59'
-  }
-}
+import Dashboard from '../dashboard/Dashboard'
 
 class Login extends Component {
-  render() {
-    return (
-      <div
-        className='row h-100 justify-content-center align-items-center'
-        style={{ marginTop: '10%' }}
-      >
-        <LoginNav />
-        <form className='mx-auto text-center'>
-          <h4 className='mb-5' style={{ color: '#182E58' }}>
-            Treasury Debt Issuance
-          </h4>
-          <p className='mb-5' style={{ color: '#182E58' }}>
-            Login To Your Account
-          </p>
-          <div className='input-group form-group'>
-            <div className='input-group-prepend'>
-              <span className='input-group-text' style={style.icons}>
-                <FontAwesomeIcon icon={faIdCardAlt} />
-              </span>
+    constructor(props) {
+        super(props)
 
-              <input
-                type='text'
-                placeholder='User ID / Email'
-                style={style.inputs}
-              ></input>
+        this.state = {
+            Email: '',
+            Password: '',
+        }
+        this.emailOnChangeHandler = this.emailOnChangeHandler.bind(this)
+        this.passOnChangeHandler = this.passOnChangeHandler.bind(this)
+        this.Login = this.Login.bind(this)
+    }
+
+    emailOnChangeHandler(event) {
+        this.setState({
+            ...this.state,
+            Email: event.target.value,
+        })
+    }
+
+    passOnChangeHandler(event) {
+        this.setState({
+            ...this.state,
+            Password: event.target.value,
+        })
+    }
+
+    Login(event) {
+        const email = '1'
+        const pass = '1'
+        if (this.state.Email === email && this.state.Password === pass) {
+            this.props.signIn(this.state.Email, this.state.Password)
+            event.preventDefault()
+        } else {
+            alert('Incorrect Email or Password')
+            event.preventDefault()
+        }
+    }
+
+    render() {
+        return (
+            <div className="mx-auto row h-100 justify-content-center align-items-center">
+                <form className="mx-auto text-center" onSubmit={this.Login}>
+                    <h4 className="mb-5">Treasury Debt Issuance</h4>
+                    <p className="mb-5">Login To Your Account</p>
+                    <div className="input-group form-group">
+                        <div className="input-group-prepend">
+                            <span
+                                className="input-group-text"
+                                style={style.icons}
+                            >
+                                <FontAwesomeIcon icon={faIdCardAlt} />
+                            </span>
+
+                            <input
+                                type="text"
+                                placeholder="User ID / Email"
+                                style={style.inputs}
+                                onChange={this.emailOnChangeHandler}
+                            ></input>
+                        </div>
+                    </div>
+
+                    <div className="input-group form-group">
+                        <div className="input-group-prepend">
+                            <span
+                                className="input-group-text"
+                                style={style.icons}
+                            >
+                                <FontAwesomeIcon icon={faKey} />
+                            </span>
+
+                            <input
+                                type="password"
+                                placeholder="Password"
+                                style={style.inputs}
+                                onChange={this.passOnChangeHandler}
+                            ></input>
+                        </div>
+                    </div>
+                    <label class="float-left">
+                        <a href="#">Forgot password?</a>
+                    </label>
+                    <button type="submit" class="btn btn-secondary float-right">
+                        Sign In
+                    </button>
+                </form>
             </div>
-          </div>
-
-          <div className='input-group form-group'>
-            <div className='input-group-prepend'>
-              <span className='input-group-text' style={style.icons}>
-                <FontAwesomeIcon icon={faKey} />
-              </span>
-
-              <input
-                type='password'
-                placeholder='Password'
-                style={style.inputs}
-              ></input>
-            </div>
-          </div>
-          <label className='float-left' style={{ color: '#182E58' }}>
-            <a href='#'>Forgot password?</a>
-          </label>
-          <button
-            type='submit'
-            className='btn btn-secondary float-right'
-            style={style.btn}
-          >
-            Sign In
-          </button>
-        </form>
-      </div>
-    )
-  }
+        )
+    }
 }
 
 export default Login
