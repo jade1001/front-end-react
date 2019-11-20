@@ -1,38 +1,34 @@
-import React, { Component } from 'react'
-import Dashboard from '../dashboard/Dashboard'
-import Login from '../login/Login'
+import React, { Component } from 'react';
+import Dashboard from '../dashboard/Dashboard';
+import Login from '../login/Login';
 
 export class Home extends Component {
-    constructor(props) {
-        super(props)
+  constructor(props) {
+    super(props);
 
-        this.state = {
-            email: '',
-            password: '',
-            isLoggedIn: false,
-        }
-        this.signIn = this.signIn.bind(this)
-    }
+    this.state = {
+      email: '',
+      password: '',
+      isLoggedIn: false
+    };
+    this.signIn = this.signIn.bind(this);
+  }
 
-    signIn(email, password) {
-        this.setState({
-            email: email,
-            password: password,
-            isLoggedIn: true,
-        })
-    }
+  signIn(email, password) {
+    this.setState({
+      email: email,
+      password: password,
+      isLoggedIn: true
+    });
+  }
 
-    render() {
-        return (
-            <>
-                {this.state.isLoggedIn ? (
-                    <Dashboard />
-                ) : (
-                    <Login signIn={this.signIn} />
-                )}
-            </>
-        )
-    }
+  render() {
+    return (
+      <>
+        {this.state.isLoggedIn ? <Dashboard /> : <Login signIn={this.signIn} />}
+      </>
+    );
+  }
 }
 
-export default Home
+export default Home;
