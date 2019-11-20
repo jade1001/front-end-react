@@ -1,12 +1,10 @@
 import React, { Component } from 'react';
-import '../Nav/Nav.css';
-import logo from '../Nav/logo.png';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
+import logo from '/Users/ariane.mejia/Desktop/REACT TASK/front-end-react/src/Nav/logo.png';
+import '../login/loginNav.css';
 // import { Link } from 'react-router-dom';
 // import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
-class Nav extends Component {
+class LoginNav extends Component {
   render() {
     return (
       <div className="container-fluid">
@@ -14,40 +12,18 @@ class Nav extends Component {
           <a class="navbar-brand" href="#">
             <img src={logo} alt="logo" />
           </a>
-          <ul className="navbar-nav">
+          <ul className="navbar-nav ml-auto" style={{ marginRight: '3%' }}>
             <li className="nav-item">
               <a href="#home" className="nav-link">
-                Dashboard
+                Sign In
               </a>
             </li>
             <li className="nav-item">
               <a href="#home" className="nav-link">
-                Debt Issuance
-              </a>
-            </li>
-            <li className="nav-item">
-              <a href="#home" className="nav-link">
-                Credit Limits
-              </a>
-            </li>
-            <li className="nav-item">
-              <a href="#home" className="nav-link">
-                Identities
-              </a>
-            </li>
-            <li className="nav-item">
-              <a href="#home" className="nav-link">
-                Settings
+                Help
               </a>
             </li>
           </ul>
-          <a href="#home" className="nav-link nav-item nav-right">
-            IPA Ops
-            <FontAwesomeIcon icon={faChevronDown} />
-          </a>
-          <a href="#home" className="nav-link nav-item helpnav">
-            Help
-          </a>
         </nav>
         {/* <Router>
           <div className="App">
@@ -65,4 +41,4 @@ class Nav extends Component {
   }
 }
 
-export default Nav;
+export default LoginNav;
