@@ -21,3 +21,6 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+src/components/dashboard/CardDesign.css
+src/components/dashboard/Dashboard.js
+src/components/dashboard/reports.png

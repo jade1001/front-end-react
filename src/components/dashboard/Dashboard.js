@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import './CardDesign.css'
+import '@fortawesome/fontawesome-free/css/all.min.css'
+import report from '../dashboard/reports.png'
 
 class Dashboard extends Component {
   render() {
@@ -7,7 +9,7 @@ class Dashboard extends Component {
       <div>
         <div className='container' id='divReports'>
           <div align='right' id='textReport'>
-            Reports<i class='fas fa-chevron-right'></i>
+            <img src={report} width='80px' />
           </div>
         </div>
         <div className='container' id='cont'>
