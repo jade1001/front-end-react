@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import './CardDesign.css'
 import report from '../dashboard/reports.png'
+import OpsNotif from './OpsNotif'
 
 class Dashboard extends Component {
     render() {
@@ -78,6 +79,7 @@ class Dashboard extends Component {
                         </div>
                     </div>
                 </div>
+                <OpsNotif />
             </div>
         )
     }
