@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Dashboard from '../dashboard/Dashboard'
 import Login from '../login/Login'
+import { Link } from 'react-router-dom'
 
 export class Home extends Component {
     constructor(props) {

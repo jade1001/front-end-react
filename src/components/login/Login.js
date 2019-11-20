@@ -91,12 +91,14 @@ class Login extends Component {
                         <label class="float-left">
                             <a href="#">Forgot password?</a>
                         </label>
-                        <button
-                            type="submit"
-                            class="btn btn-secondary float-right"
-                        >
-                            Sign In
-                        </button>
+                        <Link to="/dashboard">
+                            <button
+                                type="submit"
+                                class="btn btn-secondary float-right"
+                            >
+                                Sign In
+                            </button>
+                        </Link>
                     </form>
                 </div>
             </>
