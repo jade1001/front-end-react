@@ -20,7 +20,9 @@ class DebtIssuance extends Component {
 
   render() {
     let filtered = this.state.jsonData.filter(data => {
-      return data.name.indexOf(this.state.search) !== -1
+      return (
+        data.name.toLowerCase().indexOf(this.state.search.toLowerCase()) !== -1
+      )
     })
     return (
       <div className='container'>
