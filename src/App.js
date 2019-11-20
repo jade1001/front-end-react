@@ -23,7 +23,7 @@ import Login from './components/login/Login'
 import Nav from './components/nav/Nav'
 import Dashboard from './components/dashboard/Dashboard'
 import Home from './components/index/Home.js'
-import OpsNotif from './components/Dashboard/OpsNotif'
+import OpsNotif from './components/dashboard/OpsNotif'
 
 function App() {
     return (
