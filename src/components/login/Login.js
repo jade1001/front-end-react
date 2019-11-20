@@ -4,8 +4,7 @@ import { faIdCardAlt } from '../../../node_modules/@fortawesome/free-solid-svg-i
 import { faKey } from '../../../node_modules/@fortawesome/free-solid-svg-icons'
 import style from './LoginStyles'
 import LoginNav from '../login/LoginNav'
-
-import Dashboard from '../dashboard/Dashboard'
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom'
 
 class Login extends Component {
   constructor(props) {
@@ -88,13 +87,15 @@ class Login extends Component {
             <label class='float-left'>
               <a href='#'>Forgot password?</a>
             </label>
-            <button
-              type='submit'
-              class='btn btn-secondary float-right'
-              style={{ backgroundColor: '#192f59' }}
-            >
-              Sign In
-            </button>
+            <Link to='/dashboard'>
+              <button
+                type='submit'
+                class='btn btn-secondary float-right'
+                style={{ backgroundColor: '#192f59' }}
+              >
+                Sign In
+              </button>
+            </Link>
           </form>
         </div>
       </>
