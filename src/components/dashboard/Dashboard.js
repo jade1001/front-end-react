@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
 import './CardDesign.css';
 import report from '../dashboard/reports.png';
-import OpsNotif from './OpsNotif';
+import OpsNotif1 from './OpsNotif1';
+import Nav from '../nav/Nav';
 
 class Dashboard extends Component {
   render() {
     return (
       <div>
+        <Nav />
         <div className='container' id='divReports'>
           <div align='right' id='textReport'>
             <img src={report} width='80px' />
@@ -79,7 +81,7 @@ class Dashboard extends Component {
             </div>
           </div>
         </div>
-        <OpsNotif />
+        <OpsNotif1 />
       </div>
     );
   }
