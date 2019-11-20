@@ -9,10 +9,12 @@ nav {
 li a {
   color: #a2a2a2;
   text-decoration-style: none;
+  background-color: rgb(245, 245, 245);
   border: 3px solid rgb(245, 245, 245);
 }
 li a:hover {
   color: darkblue;
   text-decoration-line: none;
+  background-color: rgb(245, 245, 245);
   border-bottom: 3px solid black;
 }

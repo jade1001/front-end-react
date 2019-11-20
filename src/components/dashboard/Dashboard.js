@@ -1,12 +1,14 @@
-import React, { Component } from 'react'
-import './CardDesign.css'
-import '@fortawesome/fontawesome-free/css/all.min.css'
-import report from '../dashboard/reports.png'
+import React, { Component } from 'react';
+import './CardDesign.css';
+import report from '../dashboard/reports.png';
+import OpsNotif1 from './OpsNotif1';
+import Nav from '../nav/Nav';
 
 class Dashboard extends Component {
   render() {
     return (
       <div>
+        <Nav />
         <div className='container' id='divReports'>
           <div align='right' id='textReport'>
             <img
@@ -83,9 +85,10 @@ class Dashboard extends Component {
             </div>
           </div>
         </div>
+        <OpsNotif1 />
       </div>
-    )
+    );
   }
 }
 
-export default Dashboard
+export default Dashboard;

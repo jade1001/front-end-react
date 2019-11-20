@@ -1,6 +1,3 @@
-body {
-  margin-top: 45px;
-}
 #fdiv {
   width: 170px;
   height: 140px;
@@ -22,6 +19,7 @@ body {
   padding-bottom: 10px;
 }
 #divReports {
+  margin-top: 49px;
   width: 80%;
   height: 40px;
 }

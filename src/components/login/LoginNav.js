@@ -1,6 +1,8 @@
-import React, { Component } from 'react'
-import logo from '../Nav/logo.png'
-import '../login/loginNav.css'
+import React, { Component } from 'react';
+import logo from '../nav/logo.png';
+import '../login/loginNav.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 // import { Link } from 'react-router-dom';
 // import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
@@ -12,18 +14,31 @@ class LoginNav extends Component {
           <a className='navbar-brand' href='#'>
             <img src={logo} alt='logo' />
           </a>
-          <ul className='navbar-nav ml-auto' style={{ marginRight: '3%' }}>
-            <li className='nav-item'>
-              <a href='#home' className='nav-link'>
-                Sign In
-              </a>
-            </li>
-            <li className='nav-item'>
-              <a href='#home' className='nav-link'>
-                Help
-              </a>
-            </li>
-          </ul>
+          <button
+            className='navbar-toggler'
+            type='button'
+            data-toggle='collapse'
+            data-target='#navbarToggler'
+            aria-controls='navbarToggler'
+          >
+            <span class='navbar-toggler-icon'>
+              <FontAwesomeIcon icon={faBars} />
+            </span>
+          </button>
+          <div className='collapse navbar-collapse' id='navbarToggler'>
+            <ul className='navbar-nav ml-auto' style={{ marginRight: '3%' }}>
+              <li className='nav-item'>
+                <a href='#home' className='nav-link'>
+                  Sign In
+                </a>
+              </li>
+              <li className='nav-item'>
+                <a href='#home' className='nav-link'>
+                  Help
+                </a>
+              </li>
+            </ul>
+          </div>
         </nav>
         {/* <Router>
           <div className="App">
@@ -37,8 +52,8 @@ class LoginNav extends Component {
           </div>
         </Router> */}
       </div>
-    )
+    );
   }
 }
 
-export default LoginNav
+export default LoginNav;
