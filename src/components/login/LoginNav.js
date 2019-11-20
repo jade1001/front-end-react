@@ -10,8 +10,8 @@ class LoginNav extends Component {
   render() {
     return (
       <div className="container-fluid">
-        <nav class="navbar navbar-expand-sm bg-default navbar-default fixed-top">
-          <a class="navbar-brand" href="#">
+        <nav className="navbar navbar-expand-sm bg-default navbar-default fixed-top">
+          <a className="navbar-brand" href="#">
             <img src={logo} alt="logo" />
           </a>
           <button
