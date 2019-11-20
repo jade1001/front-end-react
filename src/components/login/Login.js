@@ -53,7 +53,9 @@ class Login extends Component {
         <div className='mx-auto row h-100 justify-content-center align-items-center'>
           <form className='mx-auto text-center' onSubmit={this.Login}>
             <h4 className='mb-5'>Treasury Debt Issuance</h4>
-            <p className='mb-5'>Login To Your Account</p>
+            <p className='mb-5' style={{ color: '#192f59' }}>
+              Login To Your Account
+            </p>
             <div className='input-group form-group'>
               <div className='input-group-prepend'>
                 <span className='input-group-text' style={style.icons}>
@@ -86,7 +88,11 @@ class Login extends Component {
             <label class='float-left'>
               <a href='#'>Forgot password?</a>
             </label>
-            <button type='submit' class='btn btn-secondary float-right'>
+            <button
+              type='submit'
+              class='btn btn-secondary float-right'
+              style={{ backgroundColor: '#192f59' }}
+            >
               Sign In
             </button>
           </form>

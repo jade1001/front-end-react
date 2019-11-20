@@ -13,8 +13,8 @@ li a {
   border: 3px solid rgb(245, 245, 245);
 }
 li a:hover {
-  color: darkblue;
+  color: #192f59;
   text-decoration-line: none;
   background-color: rgb(245, 245, 245);
-  border-bottom: 3px solid black;
+  border-bottom: 3px solid #192f59;
 }
