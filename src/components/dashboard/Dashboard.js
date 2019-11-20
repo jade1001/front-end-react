@@ -9,7 +9,11 @@ class Dashboard extends Component {
       <div>
         <div className='container' id='divReports'>
           <div align='right' id='textReport'>
-            <img src={report} width='80px' />
+            <img
+              src={report}
+              width='80px'
+              style={{ tintColor: 'gray', opacity: 0.5, cursor: 'pointer' }}
+            />
           </div>
         </div>
         <div className='container' id='cont'>
