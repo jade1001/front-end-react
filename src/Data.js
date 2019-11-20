@@ -1,5 +1,4 @@
 const Data = [
-
     {
         name: "MonetaGo 100D 17/10/2019",
         isin: "Pending",
