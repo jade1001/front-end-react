@@ -31,12 +31,12 @@
   padding: 0px !important;
 }
 
-.table-content{
-    font-size: 12px;
+.table-content {
+  font-size: 12px;
 }
 
-.table-content th{
-    font-weight: normal;
+.table-content th {
+  font-weight: normal;
 }
 
 /* @media(min-width: 320px){
@@ -45,3 +45,7 @@
     }
    
 } */
+
+#tRow {
+  cursor: pointer;
+}
