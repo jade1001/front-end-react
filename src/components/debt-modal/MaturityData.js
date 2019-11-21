@@ -4,7 +4,7 @@ import "./Maturity.css";
 class MaturityData extends Component {
   render() {
     return (
-      <div class="main ">
+      <div class="main">
         <div class="container">
           <div class="row" id="frow">
             <div class="col fcolumn text-muted">ISIN</div>

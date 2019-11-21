@@ -1,4 +1,4 @@
-.title-header {
+/* .title-header {
     background-color: rgb(245,245,245);
     padding: 5px;
     color: rgb(24, 46, 88);
@@ -12,7 +12,8 @@
     font-size: 13px;
 }
 .modal-body {
-    width: 90%;
+    background-color: white;
+    width: 100%;
     margin: auto;
 }
 .qspan {
@@ -27,7 +28,7 @@
     padding: 0 16px;
 }
 .modal-data-body {
-    width: 90%;
+    width: 94%;
     border-top: none;
     margin: auto;
 }
@@ -42,6 +43,33 @@
 }
 ul {
     width: 90%;
+} */
+.modal-header {
+    background-color: rgb(245, 245, 245);
+}
+.modal-title {
+    color: rgb(24, 46, 88);
+}
+#quickspan {
+    font-size: 12px;
+    color: rgb(24, 46, 88);
+    padding-left: 75px;
+}
+#quickspan:hover {
+    text-decoration-line: none;
+}
+
+/** Nav **/
+
+.nav {
+    font-size: 10px;
+}
+.nav-link{
+    border-color: white;
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    border-bottom: 3px solid white;
 }
 
 /** Data component **/
@@ -51,10 +79,6 @@ ul {
 #srow {
     height: 50px;
     margin-top: 20px;
-}
-.container {
-    width: 90%;
-    margin: auto;
 }
 .fcolumn {
     text-align: left;
@@ -68,9 +92,22 @@ ul {
     text-align: right;
     font-size: 11px;
 }
-
+.modal-data-body{
+    margin: auto;
+    width: 80%;
+}
+.main{
+    margin: auto;
+}
+.container {
+    font-size: 10px;
+}
 
 /** Comment component **/
+.modal-footer {
+    width: 75%;
+    margin: auto;
+}
 .comment-container {
     text-align: left;
     height: 150px;
