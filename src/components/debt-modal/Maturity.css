@@ -147,7 +147,7 @@ ul {
 }
 
 
-/** CSS for CreditLimits section **/
+/** CSS for CreditLimits, Documents section **/
 
 thead tr th,
 tbody tr td:last-child {
@@ -170,7 +170,13 @@ table .dropleft .dropdown-toggle::before {
 #verify {
     text-align: center;
     color: #adadad;
+    /*color: #398a25;*/
 }
 
 
-/** End of CreditLimits section **/
+/*#verify i{
+    visibility: hidden !important;
+}*/
+
+
+/** End of section **/
