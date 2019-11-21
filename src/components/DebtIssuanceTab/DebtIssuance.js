@@ -1,102 +1,129 @@
-import React from 'react'
+import React, { Component } from 'react'
 import './debt.css'
+import JSONData from '../DebtIssuanceTab/data.json'
 
+class DebtIssuance extends Component {
+  constructor(props) {
+    super(props)
 
-function DebtIssuance(){
-
-
-
-    return (
-        <div className="container">
-            <div className="commercial">
-            <span >Commercial Paper</span>
-            </div>
-                <div className="row">
-                    <div className="col-m-4 m-3 sidenav">
-                        <div className="sided w-100 ml-3 mr-2">
-                            <a href="#" className="maturities">
-                                <span>Maturities ISIN</span>
-                                <i className="icon fa fa-fw fa-chevron-right"></i>
-                             </a>
-                            <a href="#" className="tranch">
-                                <span>Tranches</span>
-                                <i className="icon fa fa-fw fa-chevron-right"></i>
-                            </a>
-                            <a href="#" className="allo">
-                                <span>Allocations</span>
-                                <i className="icon fa fa-fw fa-chevron-right"></i>
-                            </a>
-                            <ul>
-                            <li>
-                                <a href="#" className="start">
-                                    Start New 
-                                </a>
-                            </li>
-                            </ul>
-                        </div>
-                    </div>
-                    
-                    <div className="col-m-8 m-3 ">
-                        <div className="pt-4 navIndent">
-                       
-                            <nav className="navbar navbar-expand-lg navbar-light bg-light">
-                                <a className="navbar-brand" href="#"><i className='fa fa-download'></i></a>
-                                <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                                    <span className="navbar-toggler-icon"></span>
-                                </button>
-
-                                <div className ="collapse navbar-collapse" id="navbarSupportedContent">
-                                    <form className="form-inline my-2 my-lg-0">
-                                        <input className="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"/>
-                                        <button className="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="fa fa-fw fa-search"></i></button>
-                                        
-                                    </form>
-                                    
-                                </div>
-                            </nav>
-                           
-                            </div>
-                        </div>  
-                </div>
-        </div> 
-    )
-    
+    this.state = {
+      search: '',
+      jsonData: JSONData
     }
-export default DebtIssuance
+  }
 
+  updateSearch(event) {
+    this.setState({
+      search: event.target.value.substr(0, 20)
+    })
+  }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-{/* <div className = "Debt">
-            <p className="normal">Commercial Paper</p>
+  render() {
+    let filtered = this.state.jsonData.filter(data => {
+      return (
+        data.name.toLowerCase().indexOf(this.state.search.toLowerCase()) !== -1
+      )
+    })
+    return (
+      <div className='container-fluid'>
+        <div className='commercial ml-4 pt-5'>
+          <span>Commercial Paper</span>
         </div>
+        <div className='row'>
+          <div className='col-2 sidenav'>
+            <div className='sided ml-3'>
+              <a href='blank' className='maturities'>
+                <span>Maturities ISIN</span>
+                <i className='icon fa fa-fw fa-chevron-right'></i>
+              </a>
+              <a href='blank' className='tranch'>
+                <span>Tranches</span>
+                <i className='icon fa fa-fw fa-chevron-right'></i>
+              </a>
+              <a href='blank' className='allo'>
+                <span>Allocations</span>
+                <i className='icon fa fa-fw fa-chevron-right'></i>
+              </a>
+              <ul>
+                <li>
+                  <a href='blank' className='start'>
+                    Start New
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
 
-        <div>
-            <p className = "maturities">Maturities ISIN></p>
-            <p>Tranches</p>
-            <p>Allocations</p>
-            <p>Start New</p>
-        </div>    */}
+          <div className='col-10 '>
+            <div className='pt-4 navIndent'>
+              <nav className='navbar navbar-light'>
+                <a className='navbar-brand' href='blank'>
+                  <i className='fa fa-download'></i>
+                </a>
+
+                  <form className='form-inline my-2 my-lg-0'>
+                    <input
+                      className='form-control mr-sm-2'
+                      type='search'
+                      aria-label='Search'
+                      value={this.state.search}
+                      onChange={this.updateSearch.bind(this)}
+                    />
+                    <button
+                      className='btn btn-dark my-2 my-sm-0'
+                      type='submit'
+                      onChange={this.updateSearch.bind(this)}
+                    >
+                      <i className='fa fa-fw fa-search'></i>
+                    </button>
+                  </form>
+              </nav>
+              <table className='table table-hover table-content'>
+            <thead>
+              <tr>
+                <th scope='col'>Name</th>
+                <th scope='col'>ISIN</th>
+                <th scope='col'>Status</th>
+                <th scope='col'>Total Redemption Value</th>
+                <th scope='col'>Tenor</th>
+                <th scope='col'>Maturity Date</th>
+                <th scope='col'>Created</th>
+              </tr>
+            </thead>
+            <tbody>
+              {filtered.map((n, i) => (
+                <tr key={i}>
+                  <td>
+                    <span>{n.name}</span>
+                  </td>
+                  <td>
+                    <span>{n.isin}</span>
+                  </td>
+                  <td>
+                    <span>{n.status}</span>
+                  </td>
+                  <td>
+                    <span>{n.trvalue}</span>
+                  </td>
+                  <td>
+                    <span>{n.tenor}</span>
+                  </td>
+                  <td>
+                    <span>{n.mdate}</span>
+                  </td>
+                  <td>
+                    <span>{n.created}</span>
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    )
+  }
+}
+
+export default DebtIssuance
