@@ -26,7 +26,7 @@ class DebtIssuance extends Component {
     })
     return (
       <div className='container-fluid'>
-        <div className='commercial ml-4'>
+        <div className='commercial ml-4 pt-5'>
           <span>Commercial Paper</span>
         </div>
         <div className='row'>
@@ -56,7 +56,7 @@ class DebtIssuance extends Component {
 
           <div className='col-10 '>
             <div className='pt-4 navIndent'>
-              <nav className='navbar navbar-light bg-light'>
+              <nav className='navbar navbar-light'>
                 <a className='navbar-brand' href='blank'>
                   <i className='fa fa-download'></i>
                 </a>
@@ -78,7 +78,7 @@ class DebtIssuance extends Component {
                     </button>
                   </form>
               </nav>
-              <table className='table table-hover'>
+              <table className='table table-hover table-content'>
             <thead>
               <tr>
                 <th scope='col'>Name</th>

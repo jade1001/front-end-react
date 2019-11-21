@@ -31,6 +31,14 @@
   padding: 0px !important;
 }
 
+.table-content{
+    font-size: 12px;
+}
+
+.table-content th{
+    font-weight: normal;
+}
+
 /* @media(min-width: 320px){
     .navIndent{
         width: 320px;
