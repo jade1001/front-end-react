@@ -1,24 +1,19 @@
-import React from 'react';
-import './App.css';
-// import Login from './components/login/Login';
-// import Nav from './components/nav/Nav';
-// import Dashboard from './components/dashboard/Dashboard';
-// import Home from './components/index/Home.js';
-// import OpsNotif from './components/dashboard/OpsNotif';
-import DebtIssuance from './components/DebtIssuanceTab/DebtIssuance';
+import React from 'react'
+import './App.css'
+import Home from './components/index/Home.js'
+import Dashboard from './components/dashboard/Dashboard'
+import { BrowserRouter as Router, Route } from 'react-router-dom'
+import Nav from './components/nav/Nav'
 
 function App() {
-  return (
-    <div className='App h-100'>
-      {/* <Dashboard /> */}
-      {/* <Nav />  */}
-      {/* <Login /> */}
-      <DebtIssuance />
-      {/* <DebtIssuance /> */}
-      {/* <Tables /> */}
-      {/* <OpsNotif /> */}
-    </div>
-  );
+    return (
+        <div className="App h-100">
+            <Router>
+                <Route exact path="/" component={Home} />
+                <Route path="/dashboard" component={Nav} />
+            </Router>
+        </div>
+    )
 }
 
-export default App;
+export default App

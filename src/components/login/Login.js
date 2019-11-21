@@ -1,48 +1,47 @@
-import React, { Component } from 'react';
-import { FontAwesomeIcon } from '../../../node_modules/@fortawesome/react-fontawesome';
-import { faIdCardAlt } from '../../../node_modules/@fortawesome/free-solid-svg-icons';
-import { faKey } from '../../../node_modules/@fortawesome/free-solid-svg-icons';
-import style from './LoginStyles';
-import LoginNav from '../login/LoginNav';
-
-import Dashboard from '../dashboard/Dashboard';
+import React, { Component } from 'react'
+import { FontAwesomeIcon } from '../../../node_modules/@fortawesome/react-fontawesome'
+import { faIdCardAlt } from '../../../node_modules/@fortawesome/free-solid-svg-icons'
+import { faKey } from '../../../node_modules/@fortawesome/free-solid-svg-icons'
+import style from './LoginStyles'
+import LoginNav from '../login/LoginNav'
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom'
 
 class Login extends Component {
   constructor(props) {
-    super(props);
+    super(props)
 
     this.state = {
       Email: '',
       Password: ''
-    };
-    this.emailOnChangeHandler = this.emailOnChangeHandler.bind(this);
-    this.passOnChangeHandler = this.passOnChangeHandler.bind(this);
-    this.Login = this.Login.bind(this);
+    }
+    this.emailOnChangeHandler = this.emailOnChangeHandler.bind(this)
+    this.passOnChangeHandler = this.passOnChangeHandler.bind(this)
+    this.Login = this.Login.bind(this)
   }
 
   emailOnChangeHandler(event) {
     this.setState({
       ...this.state,
       Email: event.target.value
-    });
+    })
   }
 
   passOnChangeHandler(event) {
     this.setState({
       ...this.state,
       Password: event.target.value
-    });
+    })
   }
 
   Login(event) {
-    const email = '1';
-    const pass = '1';
+    const email = '1'
+    const pass = '1'
     if (this.state.Email === email && this.state.Password === pass) {
-      this.props.signIn(this.state.Email, this.state.Password);
-      event.preventDefault();
+      this.props.signIn(this.state.Email, this.state.Password)
+      event.preventDefault()
     } else {
-      alert('Incorrect Email or Password');
-      event.preventDefault();
+      alert('Incorrect Email or Password')
+      event.preventDefault()
     }
   }
 
@@ -88,18 +87,20 @@ class Login extends Component {
             <label class='float-left'>
               <a href='#'>Forgot password?</a>
             </label>
-            <button
-              type='submit'
-              class='btn btn-secondary float-right'
-              style={{ backgroundColor: '#192f59' }}
-            >
-              Sign In
-            </button>
+            <Link to='/dashboard'>
+              <button
+                type='submit'
+                class='btn btn-secondary float-right'
+                style={{ backgroundColor: '#192f59' }}
+              >
+                Sign In
+              </button>
+            </Link>
           </form>
         </div>
       </>
-    );
+    )
   }
 }
 
-export default Login;
+export default Login
