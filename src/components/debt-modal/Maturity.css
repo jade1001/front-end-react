@@ -44,27 +44,33 @@
 ul {
     width: 90%;
 } */
+
 .modal-header {
     background-color: rgb(245, 245, 245);
 }
+
 .modal-title {
     color: rgb(24, 46, 88);
 }
+
 #quickspan {
     font-size: 12px;
     color: rgb(24, 46, 88);
     padding-left: 75px;
 }
+
 #quickspan:hover {
     text-decoration-line: none;
 }
+
 
 /** Nav **/
 
 .nav {
     font-size: 10px;
 }
-.nav-link{
+
+.nav-link {
     border-color: white;
     border-left: none;
     border-top: none;
@@ -72,56 +78,99 @@ ul {
     border-bottom: 3px solid white;
 }
 
+
 /** Data component **/
-#frow{
+
+#frow {
     height: 25px;
 }
+
 #srow {
     height: 50px;
     margin-top: 20px;
 }
+
 .fcolumn {
     text-align: left;
     font-size: 11px;
 }
+
 .scolumn {
     text-align: center;
     font-size: 11px;
 }
+
 .tcolumn {
     text-align: right;
     font-size: 11px;
 }
-.modal-data-body{
+
+.modal-data-body {
     margin: auto;
     width: 80%;
 }
-.main{
+
+.main {
     margin: auto;
 }
+
 .container {
     font-size: 10px;
 }
 
+
 /** Comment component **/
+
 .modal-footer {
     width: 75%;
     margin: auto;
 }
+
 .comment-container {
     text-align: left;
     height: 150px;
     width: 100%;
 }
-.comment{
+
+.comment {
     width: 100%;
     font-size: 11px;
     height: 100px;
     text-align: left;
 }
+
 .btn {
     padding: 1px;
     font-size: 8px;
     width: 40px;
     background-color: rgb(24, 46, 88);
 }
+
+
+/** CSS for CreditLimits section **/
+
+thead tr th,
+tbody tr td:last-child {
+    border: none !important;
+}
+
+table .fa-ellipsis-v:before {
+    content: "\f142" !important;
+}
+
+table .dropleft .dropdown-toggle::before {
+    border-right: none;
+}
+
+#pdf-logo {
+    color: #ff0000;
+    text-align: center;
+}
+
+#verify {
+    text-align: center;
+    color: #adadad;
+}
+
+
+/** End of CreditLimits section **/
