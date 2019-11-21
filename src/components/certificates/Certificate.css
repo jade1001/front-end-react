@@ -34,16 +34,16 @@
 }
 #cancel-btn {
   font-size: 12px;
-  padding-top: 0.2%;
+  padding-top: 1%;
   float: left;
-  height: 20px;
+  height: 40px;
   width: 90px;
 }
 #submit-btn {
   font-size: 12px;
-  padding-top: 0.2%;
+  padding-top: 1%;
   float: right;
-  height: 20px;
+  height: 40px;
   width: 90px;
 }
 #dl-btn {
