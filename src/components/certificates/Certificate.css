@@ -1,0 +1,64 @@
+.modal-header {
+  text-align: center;
+  background-color: rgb(245, 245, 245);
+}
+.modal-title {
+  color: rgb(24, 46, 88);
+}
+.content {
+  font-size: 12px;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 5%;
+  color: #182e58;
+}
+.main {
+  margin: auto;
+}
+.empty {
+  padding: 30px;
+}
+.docu-btn {
+  background-color: #182e58;
+  height: 40px;
+}
+.flex-container {
+  display: flex;
+  line-height: 2%;
+}
+#left {
+  text-align: left;
+}
+#right {
+  margin-left: 290px;
+}
+#cancel-btn {
+  font-size: 12px;
+  padding-top: 0.2%;
+  float: left;
+  height: 20px;
+  width: 90px;
+}
+#submit-btn {
+  font-size: 12px;
+  padding-top: 0.2%;
+  float: right;
+  height: 20px;
+  width: 90px;
+}
+#dl-btn {
+  padding-top: 1%;
+  height: 30px;
+  width: 60px;
+}
+.div-box {
+  width: 680px;
+  height: 600px;
+  padding: 100px;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  border: 1px solid #000000;
+}
+.btn-cert {
+  background-color: rgb(24, 46, 88);
+}
